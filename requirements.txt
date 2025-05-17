@@ -1,0 +1,25 @@
+# llama-index deps for RAG applications
+llama-index
+llama-index-llms-anthropic
+llama-index-llms-openai
+llama-index-llms-ollama
+llama-index-llms-google-genai
+llama-index-embeddings-ollama
+llama-index-vector-stores-qdrant
+llama-index-retrievers-bm25
+
+# qdrant vector store
+qdrant-client
+
+# core NLP library
+spacy
+
+# data warngling
+pandas
+
+# document chunking lib
+chonkie[all]
+
+# tokenizers
+tokenizers
+sentence_transformers
