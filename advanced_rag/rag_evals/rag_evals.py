@@ -70,7 +70,7 @@ def display_relevancy_eval_df(query: str, response: Response, eval_result: str) 
         }
     )
 
-    eval_df.head()
+    eval_df.to_csv("../evals/relevancy.csv", index=False)
 
 
 # define jupyter display function
@@ -88,7 +88,7 @@ def display_faithfulness_eval_df(response: Response, eval_result: EvaluationResu
         index=[0]
     )
 
-    eval_df.head()
+    eval_df.to_csv("../evals/faithfulness.csv", index=False)
 
 
 query_engine = index.as_query_engine(similarity_top_k=10)

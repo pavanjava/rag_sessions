@@ -1,0 +1,2 @@
+- dont delete this folder as the evals files will be stored directly to this folder
+- run the code in `rag_evals` module
