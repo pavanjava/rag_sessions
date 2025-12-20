@@ -1,10 +1,12 @@
 # llama-index deps for RAG applications
 llama-index
+llama-index-core
 llama-index-llms-anthropic
 llama-index-llms-openai
 llama-index-llms-ollama
 llama-index-llms-google-genai
 llama-index-embeddings-ollama
+llama-index-embeddings-fastembed
 llama-index-vector-stores-qdrant
 llama-index-retrievers-bm25
 
@@ -23,3 +25,12 @@ chonkie[all]
 # tokenizers
 tokenizers
 sentence_transformers
+
+# pdf util
+pdf2image
+
+# internet search
+ddgs
+
+# agentic framework
+agno>=2.3.18

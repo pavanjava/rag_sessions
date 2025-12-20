@@ -1,7 +1,7 @@
 from chonkie import TokenChunker
 from doc_reader_util import get_documents
 from sentence_transformers import SentenceTransformer
-from advanced_rag.qdrant_util.vector_store import ChonkieVectorStore
+from rag_techniques.qdrant_util.vector_store import ChonkieVectorStore
 
 
 vector_store = ChonkieVectorStore(collection_prefix="token_chunker_")
