@@ -18,8 +18,8 @@ os.environ["OPENAI_API_KEY"] = os.environ.get('openai_llm_api_key')
 
 # Llamaindex global settings for llm and embeddings
 Settings.llm = OpenAI(model=os.environ.get("openai_llm_model_id"), temperature=0.1)
-Settings.embed_model = OllamaEmbedding(model_name=os.environ.get("embedding_model_id"),
-                                       base_url=os.environ.get("embedding_host"))
+Settings.embed_model = OllamaEmbedding(model_name=os.environ.get("ollama_embedding_model_id"),
+                                       base_url=os.environ.get("ollama_embedding_host"))
 Settings.chunk_size = 128
 Settings.chunk_overlap = 128 // 5
 

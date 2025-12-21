@@ -88,7 +88,7 @@ if not client.collection_exists(collection_name="fusion_collection"):
 else:
     index = VectorStoreIndex.from_vector_store(vector_store=vector_store)
 
-vector_retriever = index.as_retriever(similarity_top_k=2)
+vector_retriever = index.as_retriever(similarity_top_k=10)
 
 retriever = QueryFusionRetriever(
     retrievers=[
@@ -96,7 +96,6 @@ retriever = QueryFusionRetriever(
         bm25_retriever
     ],
     retriever_weights=[
-
         0.6,  # vector retriever weight
         0.4  # BM25 retriever weight
     ],

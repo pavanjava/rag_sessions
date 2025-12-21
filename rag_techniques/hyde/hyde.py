@@ -19,7 +19,8 @@ from dotenv import load_dotenv, find_dotenv
 
 load_dotenv(find_dotenv())
 
-Settings.embed_model =  OllamaEmbedding(model_name=os.environ.get("embedding_model_id"),base_url=os.environ.get("embedding_host"))
+Settings.embed_model =  OllamaEmbedding(model_name=os.environ.get("ollama_embedding_model_id"),
+                                        base_url=os.environ.get("ollama_embedding_host"))
 Settings.llm = Anthropic(model=os.environ.get("anthropic_llm_model_id"), api_key=os.environ.get("anthropic_llm_api_key"))
 Settings.chunk_size = 128
 Settings.chunk_overlap = 30
