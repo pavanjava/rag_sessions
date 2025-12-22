@@ -67,6 +67,7 @@ advanced_rag/
 ├── reranking_rag/         # Result reranking strategies
 ├── rag_evals/             # Evaluation and testing tools
 ├── data/                  # Your PDF documents
+├── vision_rag/            # implements RAG using vLACQ stack
 └── evals/                 # Evaluation results
 ```
 
