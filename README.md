@@ -117,4 +117,5 @@ python rag_evals/rag_evals.py
 
 ## Contributing
 
-Feel free to experiment with different configurations, add new RAG techniques, or improve existing implementations!
+Feel free to experiment with different configurations
+, add new RAG techniques, or improve existing implementations!
